@@ -115,6 +115,7 @@ int main() {
 
   std::cout << "--> Selected choice: " << items[q4] << endl;
 
+  /* Showing a warning in a case if there is insufficient balance in the wallet */
   string q5;
   if (balance < price[q4]) {
     std::cout << "Warning!! Not enough balance. Please add money into your "
@@ -125,6 +126,7 @@ int main() {
   std::cout << "Would you like to add more money? (yes/no)" << endl;
   std::cin >> q5; 
 
+ /* Asking user if he/she wants to more money to the wallet */
   if (q5 == "Yes" || q5 == "yes") {
     std::cout << "-- Enter the amount of money do you want add: " << endl;
     std::cin >> add;
@@ -141,7 +143,7 @@ int main() {
 
     std::cout << "--> Selected choice: " << items[q4] << endl;
   }
-
+/* Ordering stuff and showing remaining balance */
   if (q4 == 0) {
     balance -= price[q4];
     std::cout << "--> Order successful!! " << endl;
