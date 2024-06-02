@@ -9,6 +9,9 @@ while user_input.lower() != 'done':
     user_input = input("Enter the items and press done when done: ")
 print("Data: ", inputs)
 
-
+flag = 0
+while flag != len(inputs):
+    print(inputs[flag])
+    flag += 1
 
 
