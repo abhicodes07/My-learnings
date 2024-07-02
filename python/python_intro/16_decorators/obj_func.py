@@ -1,6 +1,12 @@
-def name(text):
-    def greet():
-        print("hii", greet())
-    return greet
+def dec1(func1):
+    def execfunc():
+        print("Executing now")
+        func1()
+        print("Executed!")
+    return execfunc()
 
-name('abhi')
+@dec1
+def who_is_abhi():
+    print("Abhi is badass")
+
+
