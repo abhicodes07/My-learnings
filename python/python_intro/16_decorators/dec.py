@@ -17,3 +17,5 @@ def add(a, b):
 # greet(name)()
 
 greet(add)(10, 20)
+name()
+
