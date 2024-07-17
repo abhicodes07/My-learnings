@@ -1,7 +1,7 @@
 class Library:
     def __init__(self):
         self.books = []
-        print("The Library is empty, Please Added some books!")
+        print("The Library is empty, Please Add some books!")
         print()
         self.addBooks()
         
