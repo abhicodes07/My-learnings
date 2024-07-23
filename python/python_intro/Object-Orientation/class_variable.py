@@ -10,4 +10,4 @@ dog2 = Dog("Destroyer", 5)
 
 print(dog1.name, dog1.age, dog1.breed)
 print(dog2.name, dog2.age, dog2.breed)
-print(Dog.breed)
+print(Dog.breed) # accessing class variable using class name
