@@ -5,9 +5,13 @@ class MyClass:
     
     @classmethod
     def class_method(cls):
+        """a class method is a method that s bound to the class and 
+        not to an instance of the class"""
         cls.class_variable += 1
         print(f"Value of class variable: {cls.class_variable}")
-
+        print()
+        print()
+        print(MyClass.class_method.__doc__)       
 
 obj1 = MyClass(1)
 obj2 = MyClass(2)
