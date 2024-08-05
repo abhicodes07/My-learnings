@@ -5,6 +5,10 @@ class Student:
         self.fname = fname
         self.mname = mname 
     
+    def details(self):
+        """This is an example of class method as an alternative constructor.
+        The purpose of of it to create an object from data that is stored in different data format such as string or dictionary."""
+
     @classmethod
     def from_details(cls, string):
         name, age, fname, mname = string.split(",")
@@ -15,3 +19,4 @@ print(s.name)
 print(s.age)
 print(s.fname)
 print(s.mname)
+print(s.details.__doc__)
