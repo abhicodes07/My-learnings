@@ -13,12 +13,12 @@ class MyClass:
         print()
         print(MyClass.class_method.__doc__)       
 
-obj1 = MyClass(1)
-obj2 = MyClass(2)
+obj1 = MyClass(5)
+obj2 = MyClass(10)
 
-MyClass.class_method() #1
-obj1.class_method() #2 
-obj2.class_method() #3
+MyClass.class_method() #Output: 1, accessing class variable using class name 
+obj1.class_method() #Output: 2, using object
+obj2.class_method() #Output: 3, using object
 
 
 
