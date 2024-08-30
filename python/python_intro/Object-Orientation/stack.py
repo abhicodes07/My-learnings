@@ -1,6 +1,10 @@
 import numpy as np 
 MAX = 1000
 
+# In stack, insertion and deletion of data item 
+# takes place at the same end that is TOP of the 
+# stack.
+
 class Stack:
     arr = np.zeros([10], dtype=int)
     TOP = 0
@@ -12,9 +16,9 @@ class Stack:
         print(self.TOP)
 
     def Push(self, x):
-        if self.TOP >= MAX - 1:
-            print("Overflow!")
-            return False
+        if self.TOP > MAX - 1:
+            raise OverflowError
+
         else:
             self.TOP = self.TOP + 1
             self.arr[self.TOP] = x
