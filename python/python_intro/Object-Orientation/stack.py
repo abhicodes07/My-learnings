@@ -31,12 +31,17 @@ class Stack:
         else:
             self.TOP = self.TOP - 1
             return self.arr[self.TOP + 1]
+    
+    def Display(self):
+        for i in self.arr:
+            print(i, end=' ')
             
 stack = Stack()
 # stack.value()
 stack.Push(10)
 stack.Push(20)
 stack.Push(30)
+stack.Display()
 
 pop = stack.Pop()
 print(pop)
